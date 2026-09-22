@@ -1,0 +1,4 @@
+.impeccable/review/
+.impeccable/openai.key
+*.key
+.DS_Store
