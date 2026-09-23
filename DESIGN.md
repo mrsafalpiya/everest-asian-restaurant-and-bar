@@ -1,19 +1,7 @@
 ---
 name: Everest Asian Restaurant & Bar
-description: Three Japanese-inflected worlds for one bilingual curry-house home page; one will ship after the client chooses.
+description: Two Japanese-inflected worlds for one bilingual curry-house home page; one will ship after the client chooses.
 colors:
-  # Variant A, 駅名標 station sign (a/style.css)
-  a-enamel: "#F4F2EC"
-  a-enamel-2: "#FBFAF6"
-  a-ink: "#161616"
-  a-ink-2: "#3B3A33"
-  a-ink-3: "#5A5648"
-  a-rule: "#C9C4B6"
-  a-green: "#0F3D2E"
-  a-green-2: "#0A2B20"
-  a-gold: "#CE9E49"
-  a-red: "#C8102E"
-  a-red-2: "#A60D26"
   # Variant B, 暖簾 noren (b/style.css)
   b-cloth: "#123527"
   b-cloth-2: "#0C2419"
@@ -33,39 +21,6 @@ colors:
   c-blue: "#1F3A93"
   c-mustard: "#E0A526"
 typography:
-  a-display:
-    fontFamily: "Zen Kaku Gothic New, Archivo, system-ui, sans-serif"
-    fontSize: "clamp(56px, 11.5vw, 168px)"
-    fontWeight: 900
-    lineHeight: 1
-    letterSpacing: "0.06em"
-  a-headline:
-    fontFamily: "Zen Kaku Gothic New, Archivo, system-ui, sans-serif"
-    fontSize: "22px"
-    fontWeight: 700
-    lineHeight: 1.3
-    letterSpacing: "0.06em"
-  a-title:
-    fontFamily: "Zen Kaku Gothic New, Archivo, system-ui, sans-serif"
-    fontSize: "clamp(20px, 2vw, 26px)"
-    fontWeight: 900
-    letterSpacing: "0.02em"
-  a-body:
-    fontFamily: "Zen Kaku Gothic New, Archivo, system-ui, sans-serif"
-    fontSize: "clamp(16px, 1.5vw, 22px)"
-    fontWeight: 400
-    lineHeight: 2
-  a-label:
-    fontFamily: "Archivo, Zen Kaku Gothic New, sans-serif"
-    fontSize: "12px"
-    fontWeight: 400
-    letterSpacing: "0.22em"
-  a-numeral:
-    fontFamily: "Archivo, Zen Kaku Gothic New, sans-serif"
-    fontSize: "clamp(32px, 3.4vw, 44px)"
-    fontWeight: 900
-    lineHeight: 1
-    letterSpacing: "-0.01em"
   b-display:
     fontFamily: "Shippori Mincho, EB Garamond, Georgia, serif"
     fontSize: "clamp(44px, 7vw, 96px)"
@@ -138,56 +93,13 @@ typography:
     letterSpacing: "-0.01em"
 rounded:
   none: "0"
-  a-plate: "8px"
   round: "50%"
 spacing:
   gutter: "clamp(16px, 4vw, 48px)"
   c-gutter: "clamp(16px, 3vw, 40px)"
   row: "16px"
-  block: "clamp(24px, 3vw, 40px)"
-  section-a: "clamp(56px, 8vw, 96px)"
   section-b: "clamp(64px, 9vw, 120px)"
 components:
-  a-button-reserve:
-    backgroundColor: "{colors.a-red}"
-    textColor: "#FFFFFF"
-    rounded: "{rounded.none}"
-    padding: "0 28px"
-    height: "56px"
-  a-button-reserve-hover:
-    backgroundColor: "{colors.a-red-2}"
-  a-button-green:
-    backgroundColor: "{colors.a-green}"
-    textColor: "#FFFFFF"
-    rounded: "{rounded.none}"
-    padding: "0 28px"
-    height: "56px"
-  a-button-green-hover:
-    backgroundColor: "{colors.a-green-2}"
-  a-button-outline:
-    backgroundColor: "transparent"
-    textColor: "{colors.a-ink}"
-    rounded: "{rounded.none}"
-    padding: "0 28px"
-    height: "56px"
-  a-button-outline-hover:
-    backgroundColor: "{colors.a-ink}"
-    textColor: "{colors.a-enamel}"
-  a-chip:
-    backgroundColor: "transparent"
-    textColor: "{colors.a-ink}"
-    rounded: "{rounded.none}"
-    padding: "8px 14px"
-  a-section-sign-tab:
-    backgroundColor: "{colors.a-green}"
-    textColor: "{colors.a-enamel}"
-    typography: "{typography.a-headline}"
-    padding: "10px 18px"
-  a-nameplate:
-    backgroundColor: "{colors.a-enamel}"
-    textColor: "{colors.a-ink}"
-    rounded: "{rounded.a-plate}"
-    typography: "{typography.a-display}"
   b-button-green:
     backgroundColor: "{colors.b-cloth}"
     textColor: "{colors.b-washi}"
@@ -273,53 +185,33 @@ components:
 
 # Design System: Everest Asian Restaurant & Bar
 
-> **Status: three candidate worlds, one will ship.** The build carries three sibling variants of the same home page (`a/`, `b/`, `c/`) sharing content, behaviour and a base stylesheet. The client picks one. When that happens, trim this file to the chosen world: delete the other two variants' tokens from the frontmatter, their sections below, and their entries in `.impeccable/design.json`. The Shared Foundations section survives every outcome. Token keys are prefixed `a-`, `b-`, `c-` so the trim is a deletion, not a rewrite.
+> **Status: two candidate worlds, one will ship.** The build carries two sibling variants of the same home page (`b/`, `c/`) sharing content, behaviour and a base stylesheet. The client picks one. When that happens, trim this file to the chosen world: delete the other variant's tokens from the frontmatter, its sections below, and its entries in `.impeccable/design.json`. The Shared Foundations section survives every outcome. Token keys are prefixed `b-` and `c-` so the trim is a deletion, not a rewrite. (A third variant, `a/` station sign, was removed from the repo; its tokens and rules are gone from this record. `shared/site.js` still dispatches an `everest:section` event that only the removed variant listened for; it is harmless and stays.)
 
 ## Overview
 
-**Creative North Star: "Three Japanese Signs for One Curry House"**
+**Creative North Star: "Two Japanese Signs for One Curry House"**
 
-Every variant reads the restaurant through a Japanese object that already tells people where to go and what it costs: a railway nameplate, a shop curtain, a printed handbill. The brief's constraint, "a bit Japanese in theme but not completely", lands as form rather than ornament. None of the three uses cherry blossom, brush-stroke textures, or a dark full-bleed food photo with a gold serif. The logo's forest green and gold are the one thread all three worlds pull from, tuned per world (A `#0F3D2E`/`#CE9E49`, B `#123527`/`#C9A45C`, C only carries the logo itself).
+Each variant reads the restaurant through a Japanese object that already tells people where to go and what it costs: a shop curtain, a printed handbill. The brief's constraint, "a bit Japanese in theme but not completely", lands as form rather than ornament. Neither uses cherry blossom, brush-stroke textures, or a dark full-bleed food photo with a gold serif. The logo's forest green and gold are the one thread both worlds pull from, tuned per world (B `#123527`/`#C9A45C`, C only carries the logo itself).
 
-Density is high and informational in all three. Prices, hours, phone number and address are typeset as headline material, not footnotes. The page is bilingual with Japanese as the default language and English switched in place; all three worlds treat the two scripts as a single typographic system, with Latin set in a companion face that matches the Japanese face's weight and rhythm.
+Density is high and informational in both. Prices, hours, phone number and address are typeset as headline material, not footnotes. The page is bilingual with Japanese as the default language and English switched in place; both worlds treat the two scripts as a single typographic system, with Latin set in a companion face that matches the Japanese face's weight and rhythm.
 
-Motion is sparse and belongs to one signature per world: A flips the nameplate on language change and slides a marker along the route line; B parts a woven curtain as the page scrolls and lets it sway; C prints the headline off-register and stamps a hanko on load. Everything else transitions in 120ms or not at all, and `prefers-reduced-motion` collapses all of it.
+Motion is sparse and belongs to one signature per world: B parts a woven curtain as the page scrolls and lets it sway; C prints the headline off-register and stamps a hanko on load. Everything else transitions in 120ms or not at all, and `prefers-reduced-motion` collapses all of it.
 
 **Key Characteristics:**
 - Square-cornered, rule-driven layouts; radius is reserved for circles (logo, dots, hanko).
 - JA-default bilingual type with a Latin companion face per world; Latin is set with wide tracking as a secondary voice, never as the display.
 - One signal colour per world for Reserve / price / seal, kept scarce.
 - Photographs are labelled placeholders (chip bottom-left) until the client supplies originals.
-- Flat surfaces; shadow exists only where an object physically stands off the page (nameplate, curtain panels, hanging tags, logo crest).
+- Flat surfaces; shadow exists only where an object physically stands off the page (curtain panels, hanging tags, seal, logo crest).
 
 ## Colors
 
 Each world is a small fixed palette (5 to 7 hues) with one paper, one ink, one brand green or its stand-in, one warm accent, and one signal red. Nothing is tinted by opacity except hairlines on dark grounds.
 
 ### Shared
-- **Focus ring** (`--focus`, per variant): 3px solid outline offset 2px on every `:focus-visible`. A uses green, B uses vermilion, C uses indigo. Fallback `#17357d`.
-- **Selection** (`--sel` / `--sel-ink`): text selection is the world's gold on ink (A, B) or red on stock (C).
-- **Placeholder chip**: `rgba(22,22,22,.72)` on `#f4f2ec`, hard-coded in `base.css` and identical in all three worlds.
-
-### Variant A, 駅名標 station sign
-
-Enamel white sign, sumi lettering, the logo's green as the line colour, gold as the arrow strip, one red for Reserve.
-
-#### Primary
-- **Line Green** (`a-green`): the route line, station dots, section-sign tabs, spice tile, course price block, footer band, focus ring. The colour that says "this line". Deepens to **Tunnel Green** (`a-green-2`) on hover.
-- **Signal Red** (`a-red`): Reserve buttons and the "note" line in a fare row. Nowhere else. Deepens to `a-red-2` on hover.
-
-#### Secondary
-- **Arrow Gold** (`a-gold`): the centre cell of the nameplate strip, the route marker, the hover state of a station dot, the takeout note band, key labels inside green blocks. Highlight on green, never a fill for text on enamel.
-
-#### Neutral
-- **Enamel** (`a-enamel`): page and nameplate ground. **Enamel Light** (`a-enamel-2`): alternate fare rows and the dinner section ground.
-- **Sumi** (`a-ink`): text, 2px/3px structural rules, outline buttons. **Sumi 2 / Sumi 3** (`a-ink-2`, `a-ink-3`): secondary copy, hours, tax note, romaji labels.
-- **Rule** (`a-rule`): 1px hairlines between list rows.
-
-**The One Red Rule.** Red appears on the Reserve action and price notes only. If red is on screen and it is not asking you to reserve or warning about a dish, it is wrong.
-
-**The Line Colour Rule.** Green is structural (lines, dots, tabs, bands), never decorative fill behind body text.
+- **Focus ring** (`--focus`, per variant): 3px solid outline offset 2px on every `:focus-visible`. B uses vermilion, C uses indigo. Fallback `#17357d`.
+- **Selection** (`--sel` / `--sel-ink`): text selection is the world's gold on ink (B) or red on stock (C).
+- **Placeholder chip**: `rgba(22,22,22,.72)` on `#f4f2ec`, hard-coded in `base.css` and identical in both worlds.
 
 ### Variant B, 暖簾 noren
 
@@ -358,28 +250,15 @@ Poster-stock cream, black wood type, crimson and indigo ink passes, one mustard 
 
 ## Typography
 
-All three worlds load Google Fonts and share **Zen Kaku Gothic New** (400/500/700/900) as the Japanese gothic. Each world adds its own display and Latin companion.
+Both worlds load Google Fonts and share **Zen Kaku Gothic New** (400/500/700/900) as the Japanese gothic. Each world adds its own display and Latin companion.
 
 ### Shared bilingual rules
 
 **The JA-Default Rule.** `<html lang="ja" data-lang="ja">` is the shipped default. Every translatable node carries `data-t="path.key"`; attributes use `data-t-attr="attr:key"`; rendered lists carry `data-list="name"` and are regenerated by `shared/site.js` on switch. Copy that is not in `shared/content.js` does not exist.
 
-**The Companion Latin Rule.** Latin runs (romaji, "EVEREST", prices) are set in the world's Latin face via a class (`.lat` in A; `.cz` / `.gar` in B; `.cond` in C), always with wide tracking (0.2–0.34em) when it is a label and always secondary to the Japanese name at the same position.
+**The Companion Latin Rule.** Latin runs (romaji, "EVEREST", prices) are set in the world's Latin face via a class (`.cz` / `.gar` in B; `.cond` in C), always with wide tracking (0.2–0.34em) when it is a label and always secondary to the Japanese name at the same position.
 
-**The Tabular Numeral Rule.** A and C set `font-variant-numeric: tabular-nums` on `body`; prices and hours align in columns.
-
-### Variant A, station sign
-**Display / Body Font:** Zen Kaku Gothic New (with Archivo, system-ui). **Label / Numeral Font:** Archivo (with Zen Kaku Gothic New).
-**Character:** a single gothic family carries the whole sign; Archivo is the romaji and the tabular price digits. Weight, not face, makes hierarchy: 900 for names and prices, 700 for signs and buttons, 500 for readings and facts, 400 for body.
-
-- **Display** (900, `clamp(56px, 11.5vw, 168px)`, 1.0, 0.06em): the nameplate name only.
-- **Headline** (700, 22px, 1.3, 0.06em): the green section-sign tab; paired with a 15px/600 Archivo alt at 0.24em.
-- **Title** (900, `clamp(20px, 2vw, 26px)`, 0.02em): fare-set names, course names.
-- **Body** (400/500, `clamp(16px, 1.5vw, 22px)`, 2.0): concept copy, max 34em.
-- **Label** (400, 12px, 0.22em, uppercase in fare rows): romaji, keys, timetable head.
-- **Numeral** (900, `clamp(32px, 3.4vw, 44px)`, 1.0, -0.01em): the fare price; yen sign at 20px/600.
-
-Divergence from the direction contract: the contract named Noto Sans JP 900 for the nameplate; the build uses Zen Kaku Gothic New 900. The build wins.
+**The Tabular Numeral Rule.** C sets `font-variant-numeric: tabular-nums` on `body`; prices and hours align in columns. B does not; its Garamond prices sit one per row and never stack.
 
 ### Variant B, noren
 **Display / Body Font:** Shippori Mincho (with EB Garamond, Georgia). **Latin Display:** Cinzel. **Latin Numeral:** EB Garamond. **UI Font:** Zen Kaku Gothic New.
@@ -410,13 +289,11 @@ Divergence from the direction contract: the contract named Noto Sans JP 900 for 
 
 ## Layout
 
-**Shared.** Mobile-first, one column at ≤900px, two-column grids above. Content width 1200px with a fluid gutter (`spacing.gutter` = `clamp(16px, 4vw, 48px)`; C uses `clamp(16px, 3vw, 40px)` because its cells are edge-to-edge). Breakpoints that recur across all three: **520px** (button stacks), **600px** (brand text hides), **760px** (mobile call/reserve bar appears; reserve buttons stack), **900px** (grids collapse to one column), **1000–1100px** (info grid and top nav). Sticky header at z-index 20, mobile bar at 30. `html { scroll-behavior: smooth }`, off under reduced motion.
+**Shared.** Mobile-first, one column at ≤900px, two-column grids above. Content width 1200px with a fluid gutter (`spacing.gutter` = `clamp(16px, 4vw, 48px)`; C uses `clamp(16px, 3vw, 40px)` because its cells are edge-to-edge). Breakpoints that recur across both worlds: **520px** (button stacks), **600px** (brand text hides), **760px** (mobile call/reserve bar appears; reserve buttons stack), **900px** (grids collapse to one column), **1000–1100px** (C's info grid and top nav). Sticky header at z-index 20, mobile bar at 30. `html { scroll-behavior: smooth }`, off under reduced motion.
 
-**The Mobile Bar Rule.** At ≤760px a fixed two-cell bar (電話する / 予約する) sits at the bottom with `env(safe-area-inset-bottom)` padding, and the footer gains bottom padding (84–100px) so nothing is hidden behind it. Every world ships it; `@media print` hides it.
+**The Mobile Bar Rule.** At ≤760px a fixed two-cell bar (電話する / 予約する) sits at the bottom with `env(safe-area-inset-bottom)` padding, and the footer gains bottom padding (84–100px) so nothing is hidden behind it. Both worlds ship it; `@media print` hides it.
 
-**Variant A.** Sections are `.wrap` containers separated by 3px sumi rules (`border-top: 3px solid ink`) and `section-a` padding (`clamp(56px, 8vw, 96px)`). Concept and Access are `1fr / 520px` grids; the menu is a full-measure fare table whose rows are `minmax(200px,300px) 1fr auto`. The header becomes a three-column grid (`1fr auto 1fr`) at ≥1100px with the route map centred; below that the route map scrolls horizontally with the scrollbar hidden. Stations are fixed 112px wide.
-
-**Variant B.** Sections use the larger `section-b` rhythm (`clamp(64px, 9vw, 120px)`) and a three-column grid `auto 1fr 520px` where the first column is the vertical title. The hero is `100svh` with an absolutely positioned masthead, a three-column crest grid (34% / 34% / 32%) matching the three curtain panels, and a bottom "footline" that carries the hero copy left and hours/address right. Nav hides at ≤900px.
+**Variant B.** Sections use the `section-b` rhythm (`clamp(64px, 9vw, 120px)`) and a three-column grid `auto 1fr 520px` where the first column is the vertical title. The hero is `100svh` with an absolutely positioned masthead, a three-column crest grid (34% / 34% / 32%) matching the three curtain panels, and a bottom "footline" that carries the hero copy left and hours/address right. Nav hides at ≤900px.
 
 **Variant C.** No container gutters: the page is a stack of full-bleed bands separated by `--rule` (4px solid ink), every cell separated by the same rule. Grids are `1fr 1fr` (hero split, CTA pair, access buttons), `560px 1fr` (concept), `1fr 500px` (dinner), `1.2fr 1fr 1fr 1fr` (info). Fare rows alternate stock/ink. Inner cell padding is 22–28px vertical by `c-gutter` horizontal.
 
@@ -424,25 +301,22 @@ Divergence from the direction contract: the contract named Noto Sans JP 900 for 
 
 ## Elevation & Depth
 
-Flat by default in all three worlds. Depth is carried by rules and tonal blocks (paper vs ink vs green), not by shadow. Shadows exist only where the world's object physically stands off the page.
+Flat by default in both worlds. Depth is carried by rules and tonal blocks (paper vs ink vs green), not by shadow. Shadows exist only where the world's object physically stands off the page.
 
 ### Shadow Vocabulary
-- **A Nameplate** (`0 30px 60px rgba(0,0,0,.45), inset 0 2px 0 rgba(255,255,255,.4)`): the enamel plate over the dusk photo. Only shadow in A.
-- **A Hero text** (`text-shadow: 0 2px 12px rgba(0,0,0,.5)`): white copy over the photo.
 - **B Curtain panels** (`12px 0 30px rgba(0,0,0,.35)` left, `-12px 0 30px` right, `0 0 40px` centre): cloth hanging in front of the photo.
 - **B Hanging tag** (`0 6px 14px rgba(0,0,0,.25)`) and **B Seal** (`0 6px 14px rgba(0,0,0,.2)`): small objects pinned to the surface.
 - **B Crest** (`0 0 0 6px cloth, 0 0 0 8px gold, 0 30px 60px rgba(0,0,0,.5)`): the logo as a badge on the curtain; brand logo in the masthead gets a 2px gold ring only.
 - **C**: no box-shadows anywhere. Depth is `mix-blend-mode: multiply` ink on stock and the 4px rule.
 
-**The Object Shadow Rule.** A shadow is allowed only under something the world would physically hang or mount (plate, curtain, tag, seal, crest). Buttons, cards, rows and nav never cast one; hover lifts are `translateY(-1px)` (A, B) or `translate(-2px,-2px)` (C) with no shadow.
+**The Object Shadow Rule.** A shadow is allowed only under something the world would physically hang or mount (curtain, tag, seal, crest). Buttons, cards, rows and nav never cast one; hover lifts are `translateY(-1px)` (B) or `translate(-2px,-2px)` (C) with no shadow.
 
 ## Shapes
 
-Square corners are the default in all three worlds (`rounded.none`). The only radii in the build:
-- **Circles** (`50%`): logo image, station dots (14–16px, 3px green border), route marker (18px), spice numerals (26px), B language-tag pin (6px), B crest (logo at 160–300px).
-- **A nameplate** (`8px`): the enamel plate is the single soft-cornered rectangle in the project, because a real ekimei-hyō has rounded corners.
+Square corners are the default in both worlds (`rounded.none`). The only radii in the build:
+- **Circles** (`50%`): logo image, spice numerals (26px), B language-tag pin (6px), B crest (logo at 160–300px).
 
-Borders are structural and thick: A uses 2px sumi for signs, buttons, lang toggle and cards, 3px for section tops; B uses 1px (sumi on washi, gold on cloth) for everything including buttons (1.5px); C uses 4px (`--rule`) for bands, 3px for buttons/nav/tabs/facts, 2px (`--rule2`) for list rows. Only C rotates anything (hanko at -8deg, curtain panels in B rotate ±1.2–1.5deg while parting). Photos are clipped by their `figure` with `overflow: hidden` and no radius.
+Borders are structural: B uses 1px (sumi on washi, gold on cloth) for everything including buttons (1.5px); C uses 4px (`--rule`) for bands, 3px for buttons/nav/tabs/facts, 2px (`--rule2`) for list rows. Rotation is a signature, not a habit: C's hanko sits at -8deg, and B's curtain panels rotate ±1.2–1.5deg while parting. Photos are clipped by their `figure` with `overflow: hidden` and no radius.
 
 ## Components
 
@@ -454,34 +328,6 @@ Every photograph carries `<span class="ph">仮写真・差し替え予定</span>
 
 ### Shared: Skip link and focus
 `.skip` (sumi `#161616` on white, 8px 12px) appears on focus at top-left. Every focusable element shows the world's `--focus` 3px outline.
-
-### Variant A, station sign
-
-**Buttons.** Square, 2px border, 56px tall (44px `btn-sm`, 48px in the mobile bar), 0 28px padding, 700/16px, 0.04em, 10px gap for an inline arrow icon. Hover: `translateY(-1px)` plus darker fill, 120ms ease-out.
-- **Reserve** (`a-button-reserve`): red fill, white text; the only red button.
-- **Green** (`a-button-green`): line green fill; call/reserve in bands.
-- **White** (`btn-white`): enamel fill on the photo; hover to pure white.
-- **Outline** (`a-button-outline`): transparent, sumi border; hover inverts. **Line** (`btn-line`): transparent, 85% enamel border, for use over the dusk photo.
-
-**Chips** (`a-chip`): 1.5px sumi border, 8px 14px, 15px/500, `white-space: nowrap`; green border and text when used as access chips.
-
-**Section sign** (`.sec`): an inline-flex sign with a 2px sumi border; green tab (`a-section-sign-tab`, 22px/700, 0.06em) plus an Archivo alt cell (15px/600, 0.24em). At ≤900px: 18px tab, 12px alt.
-
-**Language toggle** (`.lang`): 2px sumi box, 40px tall, two Archivo 700/14px cells; `.on` inverts to sumi/enamel.
-
-**Route map nav** (signature): a 4px green line with five 112px-wide stations, each a 14px hollow dot (3px green border) over a 13px/700 label. The current section's dot fills green (`.cur`); hover fills gold and scales 1.15. A gold 18px marker (3px green border) slides along the line to the current station over 320ms `cubic-bezier(.2,.8,.2,1)`, driven by `everest:section` events from the IntersectionObserver (rootMargin `-40% 0 -55% 0`).
-
-**Nameplate** (signature): enamel plate, 8px radius, the object shadow above; face carries reading (500, `clamp(13px,1.6vw,22px)`, 0.5em) over name (display) over romaji (700, `clamp(20px,3vw,44px)`, 0.34em); a strip below is a `1fr minmax(64px,120px) 1fr` grid, green with a gold centre cell ("本日の営業", 12px/700, 0.14em) and gold arrow SVGs pointing to prev/next station. On language change (not on first paint) the plate runs `flipA` / `flipB`: a 320ms `perspective(1400px) rotateX(∓18deg)` from 40% opacity.
-
-**Timetable** (`.timetable`): enamel box, 2px sumi border, 16px 22px, two-column `auto auto` grid, green 12px/0.14em head, 14px/700 keys, 15px/600 Archivo values with 13px/400 `L.O.` in `a-ink-3`. Absolutely positioned bottom-left of the hero above 900px; static full-width below.
-
-**Fare row** (`.fare`): three-column grid, odd rows `a-enamel-2`, 1px `a-rule` between, 3px sumi top on the table; name 900 + uppercase romaji label + optional red note; chips; right-aligned price (`a-numeral`).
-
-**Menu tabs** (`.tabs`): a second route line, three stations with 16px dots; current gets weight 900 and a filled dot; on ≤760px the line turns vertical (4px wide at left).
-
-**Cards.** `.course`: 2px sumi border, enamel, grid `1fr minmax(150px,190px)`, body 22px 24px, green price cell with gold 12px/0.2em key. `.note-green` / `.note-gold`: 22px 28px padded bands, 16px/500.
-
-**Footer.** Green band; reserve row 44px padding with a 28px/900 title and 1px `rgba(244,242,236,.2)` divider; 12px/0.06em row at 80% opacity.
 
 ### Variant B, noren
 
@@ -537,16 +383,16 @@ Every photograph carries `<span class="ph">仮写真・差し替え予定</span>
 ### Do:
 - **Do** keep Japanese as the default and English as a parallel: every visible string comes from `shared/content.js` via `data-t` / `data-list`; the header, hero and every list re-set in place on switch.
 - **Do** set Latin in the world's companion face with wide tracking (0.2–0.34em) when it is a label, and at the same weight class as its Japanese neighbour when it is a name.
-- **Do** keep every world's signal colour scarce as declared: A red on Reserve only; B vermilion on seal/spice/notes; C crimson as an ink pass on bands and prices.
+- **Do** keep every world's signal colour scarce as declared: B vermilion on seal/spice/notes; C crimson as an ink pass on bands and prices.
 - **Do** ship the fixed mobile call/reserve bar at ≤760px with safe-area padding and footer clearance (84–100px).
 - **Do** label every placeholder photo with the `.ph` chip until the client's originals replace it, and honour `assets/img/CREDITS.md` attribution if any placeholder ships.
 - **Do** collapse all motion under `prefers-reduced-motion` (base.css forces 0.01ms; `page.js` in B and the reveal path bail early).
-- **Do** use square corners; radius only for circles and A's 8px nameplate.
+- **Do** use square corners; radius only for circles.
 
 ### Don't:
-- **Don't** add shadows to buttons, rows, cards or navigation; shadows belong only to physically mounted objects (nameplate, curtain, tags, seal, crest).
-- **Don't** introduce a sixth hue into A, a grey into C, or a white/grey divider onto a dark ground in B (gold hairlines only).
+- **Don't** add shadows to buttons, rows, cards or navigation; shadows belong only to physically mounted objects (curtain, tags, seal, crest).
+- **Don't** introduce a grey into C, or a white/grey divider onto a dark ground in B (gold hairlines only).
 - **Don't** set body text below 16px at desktop or below weight 500 in C.
-- **Don't** mix the worlds: no Cinzel in A, no route dots in B, no 4px rules outside C.
-- **Don't** replace the Zen Kaku Gothic New / Archivo / Shippori Mincho / Dela Gothic One / Anton stacks with system display faces.
-- **Don't** invent copy for a kicker or eyebrow above headlines; the shipped headings are the sign, the title and the alt only.
+- **Don't** mix the worlds: no Cinzel or Garamond in C, no Dela Gothic One or 4px rules in B.
+- **Don't** replace the Zen Kaku Gothic New / Shippori Mincho / Cinzel / EB Garamond / Dela Gothic One / Anton stacks with system display faces.
+- **Don't** invent copy for a kicker or eyebrow above headlines; the shipped headings are the title and the alt only.

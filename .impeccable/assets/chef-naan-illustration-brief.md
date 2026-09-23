@@ -1,6 +1,6 @@
 # Illustration brief: the chef making naan, anime style
 
-Client request (2026-09-22): an anime-style illustration of the chef making naan, shown on the home page. It sits in the Concept section on all three directions, in a slot the artwork must fill.
+Client request (2026-09-22): an anime-style illustration of the chef making naan, shown on the home page. It sits in the Concept section of both directions, in a slot the artwork must fill.
 
 ## Deliverable
 
@@ -19,6 +19,5 @@ Negative: text, watermark, logo, chibi, photorealism, extra hands.
 
 ## Where it goes
 
-- Direction A (station sign): the framed "poster" in the Concept section, 560 × 320 on desktop, full width on mobile.
 - Direction B (noren): inside the gold hairline frame with the 栃木 seal, 520 × 560 crop on desktop (portrait crop of the same art, so keep the chef upright and central).
 - Direction C (broadside): the printed plate at the left of Concept, 560 × 720 on desktop; it is shown as a halftone/duotone print on cream, so strong line work matters.

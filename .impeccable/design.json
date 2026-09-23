@@ -1,22 +1,10 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-22T00:00:00Z",
+  "generatedAt": "2026-09-23T00:00:00Z",
   "title": "Design System: Everest Asian Restaurant & Bar",
-  "note": "Three candidate worlds (a/ Station Sign, b/ Noren, c/ Hikifuda Broadside). One ships after the client chooses; delete the other two prefixes from this file and DESIGN.md at that point.",
+  "note": "Two candidate worlds (b/ Noren, c/ Hikifuda Broadside). One ships after the client chooses; delete the other prefix from this file and DESIGN.md at that point. Variant A (a/ Station Sign) was removed from the repo and from this record.",
   "extensions": {
     "colorMeta": {
-      "a-enamel": { "role": "neutral", "displayName": "Enamel", "canonical": "#F4F2EC", "tonalRamp": ["oklch(20% 0.008 85)", "oklch(32% 0.008 85)", "oklch(45% 0.008 85)", "oklch(58% 0.008 85)", "oklch(70% 0.008 85)", "oklch(82% 0.008 85)", "oklch(90% 0.008 85)", "oklch(96% 0.008 85)"] },
-      "a-enamel-2": { "role": "neutral", "displayName": "Enamel Light", "canonical": "#FBFAF6" },
-      "a-ink": { "role": "neutral", "displayName": "Sumi", "canonical": "#161616", "tonalRamp": ["oklch(15% 0 0)", "oklch(25% 0 0)", "oklch(35% 0 0)", "oklch(48% 0 0)", "oklch(60% 0 0)", "oklch(72% 0 0)", "oklch(84% 0 0)", "oklch(95% 0 0)"] },
-      "a-ink-2": { "role": "neutral", "displayName": "Sumi 2", "canonical": "#3B3A33" },
-      "a-ink-3": { "role": "neutral", "displayName": "Sumi 3", "canonical": "#5A5648" },
-      "a-rule": { "role": "neutral", "displayName": "Hairline", "canonical": "#C9C4B6" },
-      "a-green": { "role": "primary", "displayName": "Line Green", "canonical": "#0F3D2E", "tonalRamp": ["oklch(15% 0.04 165)", "oklch(24% 0.06 165)", "oklch(32% 0.07 165)", "oklch(45% 0.08 165)", "oklch(58% 0.09 165)", "oklch(70% 0.08 165)", "oklch(84% 0.06 165)", "oklch(95% 0.02 165)"] },
-      "a-green-2": { "role": "primary", "displayName": "Tunnel Green", "canonical": "#0A2B20" },
-      "a-gold": { "role": "secondary", "displayName": "Arrow Gold", "canonical": "#CE9E49", "tonalRamp": ["oklch(18% 0.05 80)", "oklch(30% 0.08 80)", "oklch(42% 0.1 80)", "oklch(55% 0.12 80)", "oklch(68% 0.13 80)", "oklch(78% 0.11 80)", "oklch(88% 0.07 80)", "oklch(95% 0.03 80)"] },
-      "a-red": { "role": "primary", "displayName": "Signal Red", "canonical": "#C8102E", "tonalRamp": ["oklch(18% 0.08 20)", "oklch(30% 0.14 20)", "oklch(42% 0.18 20)", "oklch(52% 0.21 20)", "oklch(62% 0.2 20)", "oklch(74% 0.14 20)", "oklch(86% 0.08 20)", "oklch(95% 0.03 20)"] },
-      "a-red-2": { "role": "primary", "displayName": "Signal Red Deep", "canonical": "#A60D26" },
-
       "b-cloth": { "role": "primary", "displayName": "Cloth Green", "canonical": "#123527", "tonalRamp": ["oklch(15% 0.04 160)", "oklch(24% 0.06 160)", "oklch(32% 0.07 160)", "oklch(45% 0.08 160)", "oklch(58% 0.09 160)", "oklch(70% 0.08 160)", "oklch(84% 0.06 160)", "oklch(95% 0.02 160)"] },
       "b-cloth-2": { "role": "primary", "displayName": "Cloth Green Deep", "canonical": "#0C2419" },
       "b-washi": { "role": "neutral", "displayName": "Washi", "canonical": "#F3ECDC", "tonalRamp": ["oklch(20% 0.02 85)", "oklch(32% 0.02 85)", "oklch(45% 0.02 85)", "oklch(58% 0.02 85)", "oklch(70% 0.02 85)", "oklch(82% 0.02 85)", "oklch(90% 0.02 85)", "oklch(95% 0.02 85)"] },
@@ -36,12 +24,6 @@
       "c-mustard": { "role": "secondary", "displayName": "Mustard", "canonical": "#E0A526", "tonalRamp": ["oklch(18% 0.05 80)", "oklch(30% 0.09 80)", "oklch(42% 0.12 80)", "oklch(55% 0.14 80)", "oklch(68% 0.16 80)", "oklch(78% 0.15 80)", "oklch(88% 0.09 80)", "oklch(95% 0.04 80)"] }
     },
     "typographyMeta": {
-      "a-display": { "displayName": "Nameplate", "purpose": "The station nameplate name only." },
-      "a-headline": { "displayName": "Section Sign", "purpose": "Green tab of the section sign." },
-      "a-title": { "displayName": "Fare Name", "purpose": "Fare-set and course names." },
-      "a-body": { "displayName": "Body", "purpose": "Concept copy, max 34em." },
-      "a-label": { "displayName": "Romaji Label", "purpose": "Uppercase romaji beside JA names, keys." },
-      "a-numeral": { "displayName": "Price", "purpose": "Tabular fare prices in Archivo 900." },
       "b-display": { "displayName": "Crest Name", "purpose": "Vertical エベレスト in the hero crest; Cinzel in EN." },
       "b-headline": { "displayName": "Section Title", "purpose": "お品書き, dinner, vertical section titles." },
       "b-title": { "displayName": "Row Name", "purpose": "Menu row names." },
@@ -57,8 +39,6 @@
       "c-numeral": { "displayName": "Price", "purpose": "Anton prices; hero price up to 190px." }
     },
     "shadows": [
-      { "name": "a-nameplate", "value": "0 30px 60px rgba(0,0,0,.45), inset 0 2px 0 rgba(255,255,255,.4)", "purpose": "The enamel plate standing off the dusk photo. Only box-shadow in A." },
-      { "name": "a-hero-text", "value": "text-shadow: 0 2px 12px rgba(0,0,0,.5)", "purpose": "White copy over the photo." },
       { "name": "b-panel-left", "value": "12px 0 30px rgba(0,0,0,.35)", "purpose": "Left curtain panel; right panel mirrors to -12px." },
       { "name": "b-panel-centre", "value": "0 0 40px rgba(0,0,0,.35)", "purpose": "Centre curtain panel." },
       { "name": "b-tag", "value": "0 6px 14px rgba(0,0,0,.25)", "purpose": "Hanging language tags." },
@@ -66,11 +46,8 @@
       { "name": "b-crest", "value": "0 0 0 6px var(--cloth), 0 0 0 8px var(--gold), 0 30px 60px rgba(0,0,0,.5)", "purpose": "Logo badge on the curtain." }
     ],
     "motion": [
-      { "name": "ease-sign", "value": "cubic-bezier(.2,.8,.2,1)", "purpose": "Shared ease-out for every signature move (A flip and marker 320ms, B curtain 1.1s, C stamp 500ms)." },
-      { "name": "duration-state", "value": "120ms ease-out", "purpose": "Button hover lift and fill change in all worlds." },
-      { "name": "a-flip", "value": "flipA / flipB 320ms: perspective(1400px) rotateX(-18deg|18deg) opacity .4 -> none", "purpose": "Nameplate on language change, not on first paint." },
-      { "name": "a-marker", "value": "left .32s cubic-bezier(.2,.8,.2,1)", "purpose": "Route marker slides to the current station." },
-      { "name": "a-dot", "value": "background .2s, transform .2s", "purpose": "Station dot fill and 1.15 scale on hover." },
+      { "name": "ease-sign", "value": "cubic-bezier(.2,.8,.2,1)", "purpose": "Shared ease-out for every signature move (B curtain 1.1s, C stamp 500ms)." },
+      { "name": "duration-state", "value": "120ms ease-out", "purpose": "Button hover lift and fill change in both worlds." },
       { "name": "b-part", "value": "transform 1.1s cubic-bezier(.2,.8,.2,1); --part = clamp(scrollY / (heroHeight * .7), 0, 1)", "purpose": "Curtain panels translate ±60% / rotate ∓1.5deg × --part; centre lifts 12%. Hover parts to 46% / 6%." },
       { "name": "b-sway", "value": "sway 7s ease-in-out infinite: translateX(6px) rotate(.25deg) at 50%; delays -2.3s, -4.6s", "purpose": "Continuous cloth sway per panel." },
       { "name": "b-tag-hover", "value": "transform .2s ease-out translateY(2px)", "purpose": "Hanging tag drops on hover." },
@@ -84,51 +61,10 @@
       { "name": "mobile-bar", "value": "760px" },
       { "name": "one-column", "value": "900px" },
       { "name": "info-grid", "value": "1000px" },
-      { "name": "top-nav", "value": "1100px" },
-      { "name": "a-brand-full", "value": "1320px" }
+      { "name": "top-nav", "value": "1100px" }
     ]
   },
   "components": [
-    {
-      "name": "A Reserve Button",
-      "kind": "button",
-      "refersTo": "a-button-reserve",
-      "description": "The only red button in Station Sign; Reserve on Tabelog.",
-      "html": "<a class=\"ds-a-btn ds-a-btn-red\" href=\"#\">予約する</a>",
-      "css": ".ds-a-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;font:700 16px/1 'Zen Kaku Gothic New','Archivo',system-ui,sans-serif;letter-spacing:.04em;border:2px solid transparent;text-decoration:none;transition:transform .12s ease-out,background .12s ease-out}.ds-a-btn:hover{transform:translateY(-1px)}.ds-a-btn:focus-visible{outline:3px solid #0F3D2E;outline-offset:2px}.ds-a-btn-red{background:#C8102E;color:#fff;border-color:#C8102E}.ds-a-btn-red:hover{background:#A60D26;border-color:#A60D26}"
-    },
-    {
-      "name": "A Outline Button",
-      "kind": "button",
-      "refersTo": "a-button-outline",
-      "description": "Sumi outline on enamel; inverts on hover.",
-      "html": "<a class=\"ds-a-btn ds-a-btn-outline\" href=\"#\">ランチメニューを見る</a>",
-      "css": ".ds-a-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;font:700 16px/1 'Zen Kaku Gothic New','Archivo',system-ui,sans-serif;letter-spacing:.04em;border:2px solid transparent;text-decoration:none;transition:transform .12s ease-out,background .12s ease-out}.ds-a-btn:hover{transform:translateY(-1px)}.ds-a-btn:focus-visible{outline:3px solid #0F3D2E;outline-offset:2px}.ds-a-btn-outline{background:transparent;color:#161616;border-color:#161616}.ds-a-btn-outline:hover{background:#161616;color:#F4F2EC}"
-    },
-    {
-      "name": "A Section Sign",
-      "kind": "custom",
-      "refersTo": "a-section-sign-tab",
-      "description": "Green JA tab plus tracked Archivo alt inside a 2px sumi sign.",
-      "html": "<h2 class=\"ds-a-sec\"><span class=\"ds-a-tab\">メニュー</span><span class=\"ds-a-alt\">MENU</span></h2>",
-      "css": ".ds-a-sec{display:inline-flex;align-items:stretch;border:2px solid #161616;margin:0;font-weight:700;font-family:'Zen Kaku Gothic New','Archivo',system-ui,sans-serif}.ds-a-tab{background:#0F3D2E;color:#F4F2EC;padding:10px 18px;font-size:22px;letter-spacing:.06em;line-height:1.3}.ds-a-alt{padding:10px 18px;font:600 15px/1.2 'Archivo','Zen Kaku Gothic New',sans-serif;letter-spacing:.24em;display:flex;align-items:center;color:#161616}"
-    },
-    {
-      "name": "A Route Map Nav",
-      "kind": "nav",
-      "refersTo": "a-chip",
-      "description": "Stations on a green line; current dot filled, hover gold, marker slides along.",
-      "html": "<nav class=\"ds-a-route\"><div class=\"ds-a-line\"></div><a class=\"ds-a-st ds-cur\" href=\"#\"><span class=\"ds-a-dot\"></span>ホーム</a><a class=\"ds-a-st\" href=\"#\"><span class=\"ds-a-dot\"></span>コンセプト</a><a class=\"ds-a-st\" href=\"#\"><span class=\"ds-a-dot\"></span>メニュー</a><a class=\"ds-a-st\" href=\"#\"><span class=\"ds-a-dot\"></span>アクセス</a></nav>",
-      "css": ".ds-a-route{position:relative;display:flex;justify-content:center;padding:4px 16px 8px;background:#F4F2EC;font-family:'Zen Kaku Gothic New',system-ui,sans-serif}.ds-a-line{position:absolute;left:56px;right:56px;top:9px;height:4px;background:#0F3D2E}.ds-a-st{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;width:112px;font-size:13px;font-weight:700;color:#161616;text-decoration:none}.ds-a-dot{width:14px;height:14px;border-radius:50%;border:3px solid #0F3D2E;background:#F4F2EC;transition:background .2s,transform .2s}.ds-a-st.ds-cur .ds-a-dot{background:#0F3D2E}.ds-a-st:hover .ds-a-dot{background:#CE9E49;border-color:#CE9E49;transform:scale(1.15)}.ds-a-st:focus-visible{outline:3px solid #0F3D2E;outline-offset:2px}"
-    },
-    {
-      "name": "A Nameplate",
-      "kind": "card",
-      "refersTo": "a-nameplate",
-      "description": "Enamel ekimei-hyō: reading, name, romaji, green strip with gold centre cell.",
-      "html": "<div class=\"ds-a-plate\"><div class=\"ds-a-face\"><div class=\"ds-a-reading\">えべれすと</div><div class=\"ds-a-name\">エベレスト</div><div class=\"ds-a-romaji\">EVEREST</div></div><div class=\"ds-a-strip\"><div class=\"ds-a-sl\">← 思川</div><div class=\"ds-a-sc\">本日の営業</div><div class=\"ds-a-sr\">ランチ →</div></div></div>",
-      "css": ".ds-a-plate{width:100%;max-width:640px;background:#F4F2EC;color:#161616;border-radius:8px;box-shadow:0 30px 60px rgba(0,0,0,.45),inset 0 2px 0 rgba(255,255,255,.4);overflow:hidden;font-family:'Zen Kaku Gothic New','Archivo',system-ui,sans-serif;text-align:center}.ds-a-face{display:flex;flex-direction:column;align-items:center;padding:28px 32px 18px;gap:4px}.ds-a-reading{font-size:16px;font-weight:500;letter-spacing:.5em;padding-left:.5em;color:#3B3A33}.ds-a-name{font-size:96px;line-height:1;font-weight:900;letter-spacing:.06em;padding-left:.06em;white-space:nowrap}.ds-a-romaji{font-family:'Archivo',sans-serif;font-size:28px;line-height:1;font-weight:700;letter-spacing:.34em;padding-left:.34em;margin-top:8px}.ds-a-strip{display:grid;grid-template-columns:1fr minmax(64px,120px) 1fr;align-items:center;background:#0F3D2E;color:#F4F2EC;height:52px;font-weight:700}.ds-a-sl,.ds-a-sr{padding:0 20px;font-size:18px}.ds-a-sl{text-align:left}.ds-a-sr{text-align:right}.ds-a-sc{height:100%;background:#CE9E49;color:#161616;display:flex;align-items:center;justify-content:center;font-size:12px;letter-spacing:.14em}"
-    },
     {
       "name": "B Green Button",
       "kind": "button",
@@ -211,45 +147,43 @@
     }
   ],
   "narrative": {
-    "northStar": "Three Japanese Signs for One Curry House",
-    "overview": "Every variant reads the restaurant through a Japanese object that already tells people where to go and what it costs: a railway nameplate, a shop curtain, a printed handbill. The brief's constraint, \"a bit Japanese in theme but not completely\", lands as form rather than ornament. None of the three uses cherry blossom, brush-stroke textures, or a dark full-bleed food photo with a gold serif. The logo's forest green and gold are the one thread all three worlds pull from, tuned per world.\n\nDensity is high and informational in all three. Prices, hours, phone number and address are typeset as headline material, not footnotes. The page is bilingual with Japanese as the default language and English switched in place; all three worlds treat the two scripts as a single typographic system, with Latin set in a companion face that matches the Japanese face's weight and rhythm.\n\nMotion is sparse and belongs to one signature per world: A flips the nameplate on language change and slides a marker along the route line; B parts a woven curtain as the page scrolls and lets it sway; C prints the headline off-register and stamps a hanko on load. Everything else transitions in 120ms or not at all, and prefers-reduced-motion collapses all of it.",
+    "northStar": "Two Japanese Signs for One Curry House",
+    "overview": "Each variant reads the restaurant through a Japanese object that already tells people where to go and what it costs: a shop curtain, a printed handbill. The brief's constraint, \"a bit Japanese in theme but not completely\", lands as form rather than ornament. Neither uses cherry blossom, brush-stroke textures, or a dark full-bleed food photo with a gold serif. The logo's forest green and gold are the one thread both worlds pull from, tuned per world.\n\nDensity is high and informational in both. Prices, hours, phone number and address are typeset as headline material, not footnotes. The page is bilingual with Japanese as the default language and English switched in place; both worlds treat the two scripts as a single typographic system, with Latin set in a companion face that matches the Japanese face's weight and rhythm.\n\nMotion is sparse and belongs to one signature per world: B parts a woven curtain as the page scrolls and lets it sway; C prints the headline off-register and stamps a hanko on load. Everything else transitions in 120ms or not at all, and prefers-reduced-motion collapses all of it.",
     "keyCharacteristics": [
       "Square-cornered, rule-driven layouts; radius is reserved for circles (logo, dots, hanko).",
       "JA-default bilingual type with a Latin companion face per world; Latin is set with wide tracking as a secondary voice, never as the display.",
       "One signal colour per world for Reserve / price / seal, kept scarce.",
       "Photographs are labelled placeholders (chip bottom-left) until the client supplies originals.",
-      "Flat surfaces; shadow exists only where an object physically stands off the page (nameplate, curtain panels, hanging tags, logo crest)."
+      "Flat surfaces; shadow exists only where an object physically stands off the page (curtain panels, hanging tags, seal, logo crest)."
     ],
     "rules": [
-      { "name": "The One Red Rule", "body": "Red appears on the Reserve action and price notes only. If red is on screen and it is not asking you to reserve or warning about a dish, it is wrong.", "section": "colors" },
-      { "name": "The Line Colour Rule", "body": "Green is structural (lines, dots, tabs, bands), never decorative fill behind body text.", "section": "colors" },
       { "name": "The Hairline Gold Rule", "body": "On cloth or sumi grounds every divider is 1px gold (solid or rgba(201,164,92,.3–.35)). Never a white or grey rule on a dark ground in this world.", "section": "colors" },
       { "name": "The Ink Pass Rule", "body": "Only four inks exist: black, crimson, indigo, mustard. No tints, no greys; secondary copy is ink at reduced opacity (.7–.85) on the same stock.", "section": "colors" },
       { "name": "The JA-Default Rule", "body": "<html lang=\"ja\" data-lang=\"ja\"> is the shipped default. Every translatable node carries data-t=\"path.key\"; attributes use data-t-attr=\"attr:key\"; rendered lists carry data-list=\"name\" and are regenerated by shared/site.js on switch. Copy that is not in shared/content.js does not exist.", "section": "typography" },
-      { "name": "The Companion Latin Rule", "body": "Latin runs (romaji, \"EVEREST\", prices) are set in the world's Latin face via a class (.lat in A; .cz / .gar in B; .cond in C), always with wide tracking (0.2–0.34em) when it is a label and always secondary to the Japanese name at the same position.", "section": "typography" },
-      { "name": "The Tabular Numeral Rule", "body": "A and C set font-variant-numeric: tabular-nums on body; prices and hours align in columns.", "section": "typography" },
+      { "name": "The Companion Latin Rule", "body": "Latin runs (romaji, \"EVEREST\", prices) are set in the world's Latin face via a class (.cz / .gar in B; .cond in C), always with wide tracking (0.2–0.34em) when it is a label and always secondary to the Japanese name at the same position.", "section": "typography" },
+      { "name": "The Tabular Numeral Rule", "body": "C sets font-variant-numeric: tabular-nums on body; prices and hours align in columns. B does not; its Garamond prices sit one per row and never stack.", "section": "typography" },
       { "name": "The Vertical Title Rule", "body": "Concept and Access carry their titles in writing-mode: vertical-rl at desktop; at ≤900px they fall to horizontal with 0.2em tracking. Latin in vertical runs is text-orientation: upright.", "section": "typography" },
       { "name": "The Nothing Light Rule", "body": "No text in this world is set below weight 500 (gothic) or in a thin display face.", "section": "typography" },
-      { "name": "The Mobile Bar Rule", "body": "At ≤760px a fixed two-cell bar (電話する / 予約する) sits at the bottom with env(safe-area-inset-bottom) padding, and the footer gains bottom padding (84–100px) so nothing is hidden behind it. Every world ships it; @media print hides it.", "section": "layout" },
+      { "name": "The Mobile Bar Rule", "body": "At ≤760px a fixed two-cell bar (電話する / 予約する) sits at the bottom with env(safe-area-inset-bottom) padding, and the footer gains bottom padding (84–100px) so nothing is hidden behind it. Both worlds ship it; @media print hides it.", "section": "layout" },
       { "name": "The Full-Measure Band Rule (C)", "body": "Every band fills the viewport width; the only inner padding is the cell's own. There is no centred container.", "section": "layout" },
-      { "name": "The Object Shadow Rule", "body": "A shadow is allowed only under something the world would physically hang or mount (plate, curtain, tag, seal, crest). Buttons, cards, rows and nav never cast one; hover lifts are translateY(-1px) (A, B) or translate(-2px,-2px) (C) with no shadow.", "section": "elevation" }
+      { "name": "The Object Shadow Rule", "body": "A shadow is allowed only under something the world would physically hang or mount (curtain, tag, seal, crest). Buttons, cards, rows and nav never cast one; hover lifts are translateY(-1px) (B) or translate(-2px,-2px) (C) with no shadow.", "section": "elevation" }
     ],
     "dos": [
       "Do keep Japanese as the default and English as a parallel: every visible string comes from shared/content.js via data-t / data-list; the header, hero and every list re-set in place on switch.",
       "Do set Latin in the world's companion face with wide tracking (0.2–0.34em) when it is a label, and at the same weight class as its Japanese neighbour when it is a name.",
-      "Do keep every world's signal colour scarce as declared: A red on Reserve only; B vermilion on seal/spice/notes; C crimson as an ink pass on bands and prices.",
+      "Do keep every world's signal colour scarce as declared: B vermilion on seal/spice/notes; C crimson as an ink pass on bands and prices.",
       "Do ship the fixed mobile call/reserve bar at ≤760px with safe-area padding and footer clearance (84–100px).",
       "Do label every placeholder photo with the .ph chip until the client's originals replace it, and honour assets/img/CREDITS.md attribution if any placeholder ships.",
       "Do collapse all motion under prefers-reduced-motion (base.css forces 0.01ms; page.js in B and the reveal path bail early).",
-      "Do use square corners; radius only for circles and A's 8px nameplate."
+      "Do use square corners; radius only for circles."
     ],
     "donts": [
-      "Don't add shadows to buttons, rows, cards or navigation; shadows belong only to physically mounted objects (nameplate, curtain, tags, seal, crest).",
-      "Don't introduce a sixth hue into A, a grey into C, or a white/grey divider onto a dark ground in B (gold hairlines only).",
+      "Don't add shadows to buttons, rows, cards or navigation; shadows belong only to physically mounted objects (curtain, tags, seal, crest).",
+      "Don't introduce a grey into C, or a white/grey divider onto a dark ground in B (gold hairlines only).",
       "Don't set body text below 16px at desktop or below weight 500 in C.",
-      "Don't mix the worlds: no Cinzel in A, no route dots in B, no 4px rules outside C.",
-      "Don't replace the Zen Kaku Gothic New / Archivo / Shippori Mincho / Dela Gothic One / Anton stacks with system display faces.",
-      "Don't invent copy for a kicker or eyebrow above headlines; the shipped headings are the sign, the title and the alt only."
+      "Don't mix the worlds: no Cinzel or Garamond in C, no Dela Gothic One or 4px rules in B.",
+      "Don't replace the Zen Kaku Gothic New / Shippori Mincho / Cinzel / EB Garamond / Dela Gothic One / Anton stacks with system display faces.",
+      "Don't invent copy for a kicker or eyebrow above headlines; the shipped headings are the title and the alt only."
     ]
   }
 }

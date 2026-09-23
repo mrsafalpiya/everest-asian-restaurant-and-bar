@@ -40,3 +40,7 @@ User chose to build all three directions into one GitHub Pages project: `a/` Sta
 ## Finish review outcome (2026-09-22)
 
 Reviewer disposition after three verdict passes: **ship** for the scored fix list (all resolved). Disclosed and unchanged: B's curtain panels are flat CSS cloth (no hem/fold assets; raster generation unavailable this session); A's type is Zen Kaku Gothic New 900 for the nameplate and Archivo for Latin/numerals, an adaptation of the contract's "Noto Sans JP 900 / Zen Kaku Latin" line (accepted; contract OWN-WORLD updated by this note). Whole-surface approval was not claimed by the reviewer.
+
+## Round 3 (2026-09-23)
+
+The user dropped variant A (station sign). The site now ships `b/` noren and `c/` hikifuda broadside only; the direction contract above for A is retired and B and C stand as the two live worlds. Deployed at https://everest-restro.stge.me from GitHub Pages (repo mrsafalpiya/everest-asian-restaurant-and-bar, branch main).
